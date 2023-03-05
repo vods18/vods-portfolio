@@ -1,0 +1,192 @@
+/* Estilos gerais */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do header */
+
+header {
+    height: 15vh;
+    width: 100%;
+    padding: 20px;
+
+}
+
+header span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 100px;
+    color: black
+}
+
+header nav {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+header nav a:hover, i:hover{
+    background-image: linear-gradient(to right, #bc1aa4, #5900a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: saturate(200%);
+}
+
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav li:last-child {
+    margin-right: 0;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 
+  header img{
+    width: 20%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50px;
+  } */
+
+header nav {
+    margin-top: 20px;
+
+}
+
+/* Estilos da seção hero */
+
+.hero-section {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos da seção de projetos */
+
+#projetos {
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+}
+
+#projetos h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-list li {
+    margin: 20px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.project-list li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-list li img {
+    width: 100%;
+    height: auto;
+}
+
+.project-list li h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.project-list li p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Estilos do rodapé */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
